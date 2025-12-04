@@ -1,0 +1,293 @@
+.stand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spacer{
+  height: 180px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .spacer {
+     height: 150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .spacer {
+     height: 120px;
+  }
+}
+
+.rowWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+}
+
+.rightRow {
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftRow {
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+  .leftRow,.rightRow {
+    width: 100%;
+    padding: 0 ;
+    margin: 0 ;
+  }
+  .rowWrap {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+
+.leftRightRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.clubIcon {
+  width: 10%;
+  height: 100%;
+   margin-left: .7rem;
+}
+
+.round {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+  color: white;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .round {
+     width: 100%;
+    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .round {
+     margin-top: 0rem;
+  }
+}
+
+.teamWrapper {
+  position:relative;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: .6em ;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgb(0, 22, 54);
+  border-radius: .6rem;
+  border: 2px solid rgb(101, 147, 216);
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(36, 79, 143);
+   font-weight: bold;
+}
+
+.position, .position2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+
+.positionColor {
+position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  border-top-left-radius: .6rem;
+  border-bottom-left-radius: .6rem;
+ background: #2f9aff;
+}
+
+.red { background-color: rgb(165, 0, 0); }
+.black { background-color: rgb(0, 0, 0); }
+.orange { background-color: rgb(201, 97, 0); }
+.green { background-color: rgb(0, 158, 8); }
+.blue { background-color: rgb(71, 181, 255); }
+.purple { background-color: rgb(178, 62, 255); }
+
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 65%;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.leftTeam, .rightTeam {
+  
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left, .right {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: .6em;
+  /* background-color:rgb(36, 79, 143); */
+  box-shadow: 0px 2px 8px rgb(0, 24, 59);
+  border-radius: .6rem;
+  border: 2px solid  rgb(196, 160, 0);
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@media only screen and (max-width: 750px) {
+  .right {
+    display: none;
+  }
+  .round {
+     margin-bottom: 0rem;
+  }
+}
+
+.stats {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.stats2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+/* Header: played games, won/draw/lost, points, goalfor - goal against */
+
+.gs {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  flex-direction: row;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:  white;
+  font-weight: bold;
+}
+
+.wgv {
+   width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.p {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:  white;
+  font-weight: bold;
+}
+
+.vt {
+  width: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: bold;
+} 
+
+
+/* played games, won/draw/lost, points, goalfor - goal against */
+.pg {
+  width: 18%;
+}
+
+.wdl2 {
+  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.points {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.gfga {
+  width: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+

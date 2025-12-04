@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  max-width: 2000px;
+  margin: 180px auto 0;
+  height: 500px;
+  background: #000000;
+background: rgba(0, 2, 3, 1);
+ background-image: url("../images/derbystar2025.png");
+ background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 300px;
+  }
+}
+
+.erelogo {
+  width: 100%;
+  height: auto;
+}
+
+.ball {
+   width: 100px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .ball {
+    width: 80px;
+  }
+
+}
+

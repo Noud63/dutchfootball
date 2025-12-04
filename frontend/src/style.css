@@ -1,0 +1,14 @@
+body {
+    margin:0;
+    padding:0;
+    /* margin-top: 160px; */
+  box-sizing: border-box;
+  background-color: rgb(36, 79, 143);
+}
+
+#root {
+  width:100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background: linear-gradient(90deg,rgba(0, 18, 31, 1) 0%, rgba(36, 79, 143, 1) 50%, rgba(0, 18, 31, 1) 100%);
+}

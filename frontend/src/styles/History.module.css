@@ -1,0 +1,149 @@
+
+.historyWrapper { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1155px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: white;
+
+} 
+
+.spacerHistory {
+  height: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+   .spacerHistory {
+    height: 160px;
+   }
+}
+
+@media only screen and (max-width: 400px) {
+   .spacerHistory {
+    height: 120px;
+   }
+   .historyWrapper { 
+    padding: 0 1rem;
+   }
+   
+}
+
+.history {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ontstaan, .legendes, .historyInBeeld{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: .6rem 0 .6rem 0;
+  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
+  /* background-color:rgb(36, 79, 143); */
+  box-shadow: 0px 2px 8px rgb(0, 22, 54);
+  border-radius: .6rem;
+  border: 2px solid  rgb(196, 160, 0);
+  margin-bottom: 1.2rem;
+}
+
+.historyText, .legendesSpelers {
+  font-size: 1.1rem;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.historyText {
+  margin-bottom: 3%;
+}
+
+.naam {
+  font-weight: bold;
+}
+.gallerij {
+   margin-top: 3%;
+   margin-bottom: 5%;
+   display: grid;
+    width: 100%;
+   grid-template-columns:repeat(4, 1fr);
+   gap: 50px;
+}
+
+.speler {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  flex-direction: column;
+  /* box-shadow: 0px 2px 2px rgb(2, 25, 44); */
+  /* border: 4px solid rgb(22, 54, 94); */
+}
+
+.spelerImg {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spelerNaam {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: .3rem 0 .5rem 0;
+  color: white;
+  margin-top: 1rem;
+  font-weight:400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+  /* background-color:rgb(36, 79, 143); */
+  box-shadow: 0px 2px 8px rgb(0, 22, 54);
+  border-radius: .4rem;
+  border: 2px solid  rgb(196, 160, 0);
+  /* margin-bottom: 1.2rem; */
+}
+
+.youtubeVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-top: 10px;
+  border:20px solid  rgb(8, 33, 63);
+   background-color: rgb(8, 33, 63);
+}
+
+@media only screen and (max-width: 720px) {
+   .gallerij {
+       grid-template-columns:repeat(2, 1fr);
+       grid-template-rows: 2;
+   }
+  .historyText, .legendesSpelers {
+     font-size: 1rem;
+   }
+   .legendesSpelers {
+     margin-bottom: 4%;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .spelerNaam {
+     font-size: .8rem;
+   }
+}

@@ -1,0 +1,26 @@
+.infoContainer {
+    max-width: 1155px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+   padding: 0.6rem;
+  padding-bottom: 2rem; 
+  margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.spacer{
+  height: 180px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .spacer {
+     height: 150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .spacer {
+     height: 120px;
+  }
+}
