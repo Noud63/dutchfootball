@@ -2,7 +2,7 @@
 
 Front-end: React 18, Vite, Sass css.<br>
 Back-end: Express NodeJS<br>
-State management: useReducer & useContext
+State management: useReducer & useContext<br><br>
 REST API https://api.football-data.org<br><br>
 
 
