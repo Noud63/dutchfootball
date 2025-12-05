@@ -10,6 +10,7 @@ const initialState = {
   matches: [],
   matchByDay: [],
   totalMatches: 0,
+  teams: []
 };
 
 const AllData = ({ children }) => {
@@ -20,12 +21,17 @@ const AllData = ({ children }) => {
   const [matchDay, setMatchDay] = useState([]);
   const [ranking, setRanking] = useState([]);
   const [season, setSeason] = useState("");
+  // const [squad, setSquad] = useState([]);
+  // const [teams, setTeams] = useState([]);
+
 
   const getData = useCallback(async () => {
     dispatchState({ type: "DATA_REQUEST" });
 
     try {
-      const response = await axios.get("https://dutchfootball-backend.vercel.app/api/footballData");
+      const response = await axios.get(
+        "https://dutchfootball-backend.vercel.app/api/footballData"
+      );
 
       // console.log("Res:", response.data.teams.teams);
 
@@ -42,7 +48,19 @@ const AllData = ({ children }) => {
       let ranking = response.data.standings.standings[0].table;
       setRanking(ranking);
 
-      const teams = response.data.teams.teams
+      const teams = response.data.teams.teams;
+
+      for (let team of teams) {
+        team.name = team.name
+          .replace("Rotterdam", "")
+          .replace("'65", "")
+          .replace("Almelo", "")
+          .replace("AFC", "")
+          .replace("Tilburg", "")
+          .replace("SBV", "")
+          .replace("1963", "")
+          .replace("Go Ahead", "GA");
+      }
 
       for (let club of ranking) {
         club.team.name = club.team.name
@@ -130,6 +148,7 @@ const AllData = ({ children }) => {
     getData();
   }, [getData]);
 
+
   return (
     <AllApiData.Provider
       value={{
@@ -141,7 +160,7 @@ const AllData = ({ children }) => {
         matchDays,
         matchDay,
         topScorers,
-        season,
+        season
       }}
     >
       {children}
