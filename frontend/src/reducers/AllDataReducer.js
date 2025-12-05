@@ -12,6 +12,7 @@ const AllDataReducer = (state, action) => {
                 matchByDay: lists.matchByDay,
                 totalMatches: lists.totalMatches,
                 currentMatchday: lists.currentMatchday,
+                teams: lists.teams,
                 loading: false
             }
         case "DATA_REQUEST_FAIL":

@@ -42,6 +42,8 @@ const AllData = ({ children }) => {
       let ranking = response.data.standings.standings[0].table;
       setRanking(ranking);
 
+      const teams = response.data.teams.teams
+
       for (let club of ranking) {
         club.team.name = club.team.name
           .replace("Rotterdam", "")
@@ -112,6 +114,7 @@ const AllData = ({ children }) => {
         matchByDay: matchByDay,
         totalMatches: totalMatches,
         currentMatchday: day,
+        teams: teams
       };
 
       dispatchState({ type: "DATA_REQUEST_SUCCESS", payload: data });

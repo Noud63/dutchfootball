@@ -18,7 +18,7 @@ import { useGlobalContext } from "./Context";
 
 const Home = () => {
   const { topScorers, season } = useGlobalContext();
-  console.log("Top:", topScorers);
+  // console.log("Top:", topScorers);
 
   return (
     <div className={styles.home}>

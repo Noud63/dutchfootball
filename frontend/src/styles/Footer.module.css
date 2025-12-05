@@ -60,7 +60,7 @@
   padding-bottom: .7rem;
   padding-top: .7rem;
   background-color: rgb(2, 16, 34);
-  font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (2000 - 320)));
+  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (2000 - 320)));
 }
 
 /* .colofonContent {
