@@ -25,7 +25,7 @@ const AllData = ({ children }) => {
     dispatchState({ type: "DATA_REQUEST" });
 
     try {
-      const response = await axios.get("/api/footballData");
+      const response = await axios.get("https://dutchfootball.vercel.app/api/footballData");
 
       // console.log("Res:", response.data.teams.teams);
 

@@ -32,6 +32,6 @@ app.use("/api/footballData", footballDataRoute);
 //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
 // });
 
-app.listen(PORT, console.log(`Server running on port ${PORT}`))
+// app.listen(PORT, console.log(`Server running on port ${PORT}`))
 
 module.exports = app;
