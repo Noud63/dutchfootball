@@ -1,40 +1,91 @@
 .footer {
-  display: flex;
-  align-items:flex-end;
-  justify-content: space-around;
-  flex-direction: column;
+  position: relative;
   width: 100%;
   max-width: 2000px;
-  margin: 180px auto 0;
+  margin: 180px auto 0 auto;
   height: 500px;
-  background: #000000;
-background: rgba(0, 2, 3, 1);
- background-image: url("../images/derbystar2025.png");
- background-repeat: no-repeat;
+  background-image: url("../images/derbystar2025.png");
+  background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
+}
+
+.footerTitleWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-bottom: 1px solid rgb(49, 108, 184);
+  padding-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.75em;
+  width: 0.75em;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.eredivisie {
+  color: rgb(49, 108, 184);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (2000 - 320)));
+  font-weight: bold;
+}
+
+.colofon {
+  position: absolute;
+  width: 100%;
+  max-width: 2000px;
+  left: 0;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(49, 108, 184);
+  padding-bottom: .7rem;
+  padding-top: .7rem;
+  background-color: rgb(2, 16, 34);
+  font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (2000 - 320)));
+}
+
+/* .colofonContent {
+  width: 100%;
+  max-width: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+@media only screen and (max-width: 410px) {
+  .eredivisie {
+    font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (2000 - 320)));
+  }
+  .footerTitleWrapper {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .footer {
     height: 300px;
   }
-}
-
-.erelogo {
-  width: 100%;
-  height: auto;
-}
-
-.ball {
-   width: 100px;
-  height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .ball {
-    width: 80px;
+  .footerTitleWrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-
 }
-

@@ -1,19 +1,24 @@
-import React from 'react'
+import React from "react";
 //import { useWindowWidth } from 'react-window-size-hooks';
-import styles from '../styles/Footer.module.css'
-import derbystar65 from '../images/derbystar.png'
-import logo from '../images/derbystar2025.png'
+import styles from "../styles/Footer.module.css";
+import logo from "../images/eredivisielogo_blue.png";
 
 const Footer = () => {
-
-    return (
-        <div className={styles.footer}>
-           
-            {/* <div className={styles.logo} ><img src={logo} alt="" className={styles.erelogo} /></div> */}
-            {/* <div className={styles.derbystar} ><img src={derbystar65} alt="" className={styles.ball} /></div> */}
-
+  return (
+    <div className={styles.footer}>
+      <div className={styles.eredivisie}>
+        <div className={styles.footerTitleWrapper}>
+          <div>
+            <img src={logo} alt="Eredivisie Logo" className={styles.logo} />
+          </div>
+          <div>KNVB Eredivisie 2025-2026</div>
         </div>
-    )
-}
+      </div>
+      <div className={styles.colofon}>
+        &copy;webdevelopment by noudvandun
+        </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
